@@ -4,7 +4,7 @@
 from decimal import Decimal
 
 class Calculator:
-    # 相加
+    # 相加,使用round限制flont的精度
 
     def add(self, a, b):
         return round(a+b, 1)

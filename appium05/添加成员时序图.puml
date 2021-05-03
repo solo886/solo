@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+主页 -> 通讯录:点击通讯录
+通讯录 -> 添加成员:点击添加成员按钮
+添加成员 -> 手动添加: 点击手动添加
+手动添加 <- 添加成员:点击保存
+
+@enduml

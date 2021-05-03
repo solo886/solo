@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'participant 首页 as main
+'
+'participant 通讯录 as contact
+'
+'participant 管理通讯录 as member_add
+'
+'participant 个人编辑页面 as member_add_hand
+
+
+首页 -> 通讯录: 点击通讯录
+通讯录 -> 管理通讯录: 点击编辑按钮
+管理通讯录 -> 个人编辑页面: 点击通讯录名单
+个人编辑页面 -> 个人编辑页面: 点击删除按钮，\n点击确定
+个人编辑页面 -> 管理通讯录:
+
+@enduml
